@@ -9,6 +9,8 @@
 
 An enterprise-grade, distributed embedded safety system designed to prevent vehicular accidents using Sensor Fusion, Computer Vision, and Hard Real-Time hardware controls.
 
+📖 [Read the Full Project Summary & Architecture Here](docs/System_Architecture_Rationale.md)
+
 </div>
 
 ---
@@ -19,8 +21,6 @@ Traditional driver safety prototypes rely on simple, easily spoofed hardware (li
 1. **The Edge Brain (Raspberry Pi):** Runs a full Linux OS to execute heavy Computer Vision algorithms (Dlib & OpenCV). It mathematically computes the Eye Aspect Ratio (EAR), Mouth Aspect Ratio (MAR), and Head Tilt angle to detect true physiological drowsiness.
 2. **The Edge Controller (ESP32 via FreeRTOS):** Runs strictly compiled C++ for Hard Real-Time operations using a True Real-Time Operating System. It polls the MQ-3 alcohol sensor, parses NEO-M8N GPS data, and controls the L298N Motor Driver.
 3. **The Interconnect:** The two boards communicate via USB Serial (UART), simulating an automotive CAN Bus network. Fused data is then published asynchronously via **MQTT** to a fleet management cloud dashboard.
-
-> 📖 **Read the full engineering breakdown:** [System Architecture & Problem Solving Rationale](docs/System_Architecture_Rationale.md)
 
 ---
 

@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+env.bak/
+venv.bak/
+
+# Arduino
+build/
+*.hex
+*.elf
+*.bin
+
+# Models
+models/*.dat
+models/*.h5
+models/*.pb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+.DS_Store

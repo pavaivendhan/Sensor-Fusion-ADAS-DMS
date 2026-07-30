@@ -52,10 +52,10 @@ Advanced-Driver-Safety/
 
 ## 🚀 Setup & Deployment
 
-### Part 1: Flashing the Edge Controller (ESP32)
-1. Open `esp32_firmware/main.ino` in the Arduino IDE or PlatformIO.
-2. Install the `TinyGPSPlus` library via the Library Manager.
-3. Compile and flash the code to your ESP32 module.
+### Part 1: Compiling the Edge Controller (ESP32)
+1. Open the `esp32_firmware` folder in **VS Code with the PlatformIO extension**.
+2. PlatformIO will automatically read `platformio.ini` and download the `TinyGPSPlus` library.
+3. Click the **Build & Upload** button to compile the C++ firmware and flash it to your ESP32 module.
 
 ### Part 2: Starting the Edge Brain (Raspberry Pi)
 1. Connect the flashed ESP32 to the Raspberry Pi via a Micro-USB cable.

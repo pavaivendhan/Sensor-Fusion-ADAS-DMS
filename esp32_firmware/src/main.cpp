@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <HardwareSerial.h>
 #include <TinyGPS++.h>
 

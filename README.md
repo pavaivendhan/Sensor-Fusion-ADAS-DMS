@@ -1,6 +1,6 @@
 <div align="center">
 
-# RTOS-Driven Automotive ADAS (Advanced Driver Assistance System) 🚙🧠
+# Vision & Sensor Fusion DMS for Drowsiness and Alcohol Detection 🚙🧠
 
 [![ESP32](https://img.shields.io/badge/Firmware-ESP32-black?style=for-the-badge&logo=espressif)](https://www.espressif.com/)
 [![Python](https://img.shields.io/badge/Edge_AI-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)

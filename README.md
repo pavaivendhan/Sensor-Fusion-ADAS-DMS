@@ -1,6 +1,6 @@
 <div align="center">
 
-# Sensor Fusion ADAS for Driver Safety 🚙🧠
+# Sensor Fusion ADAS & DMS for Driver Safety 🚙🧠
 
 [![ESP32](https://img.shields.io/badge/Firmware-ESP32-black?style=for-the-badge&logo=espressif)](https://www.espressif.com/)
 [![Python](https://img.shields.io/badge/Edge_AI-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
@@ -14,7 +14,7 @@ An enterprise-grade, distributed embedded safety system designed to prevent vehi
 ---
 
 ## 📌 Abstract & Overview
-Traditional driver safety prototypes rely on simple, easily spoofed hardware (like single-point IR sensors). This project mirrors the architecture of commercial **Advanced Driver Assistance Systems (ADAS)** by distributing the computational load across a **Master-Slave Topology**:
+Traditional driver safety prototypes rely on simple, easily spoofed hardware (like single-point IR sensors). This project mirrors the architecture of commercial **Advanced Driver Assistance Systems (ADAS)** and **Driver Monitoring Systems (DMS)** by distributing the computational load across a **Master-Slave Topology**:
 
 1. **The Edge Brain (Raspberry Pi):** Runs a full Linux OS to execute heavy Computer Vision algorithms (Dlib & OpenCV). It mathematically computes the Eye Aspect Ratio (EAR), Mouth Aspect Ratio (MAR), and Head Tilt angle to detect true physiological drowsiness.
 2. **The Edge Controller (ESP32 via FreeRTOS):** Runs strictly compiled C++ for Hard Real-Time operations using a True Real-Time Operating System. It polls the MQ-3 alcohol sensor, parses NEO-M8N GPS data, and controls the L298N Motor Driver.
